@@ -22,11 +22,11 @@ puts "songseedingsuccess"
 #     User.create(username: Faker::FunnyName.unique.name, password: Faker::Hacker.unique.verb)   
 # end
 
-jacob = User.create(username: 'jmknopf', password: "j") 
-tia = User.create(username: 'tiann', password: "t") 
-matthew = User.create(username: 'mattman', password: "m") 
-fred = User.create(username: 'freddy', password: "f") 
-george = User.create(username: 'georgie', password: "g") 
+jacob = User.create(username: 'jmknopf', password_digest: "j") 
+tia = User.create(username: 'tiann', password_digest: "t") 
+matthew = User.create(username: 'mattman', password_digest: "m") 
+fred = User.create(username: 'freddy', password_digest: "f") 
+george = User.create(username: 'georgie', password_digest: "g") 
 
 puts "userseedingsuccess" 
 
