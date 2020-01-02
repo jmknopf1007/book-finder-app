@@ -13,8 +13,8 @@
 <% end %>
 
 <%= form_for @user do |f| %>
-    Username: <%= f.text_field :username %><br><br>
-    Password: <%= f.password_field :password %><br><br>
+    <p><strong>Username:</strong> <%= f.text_field :username %><br><br>
+    <p><strong>Password:</strong> <%= f.password_field :password %><br><br>
     <!--Confirm Password: <%= f.password_field :password_confirmation %><br><br>-->
     
     <%= f.submit %>

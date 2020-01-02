@@ -1,5 +1,5 @@
 <div class="container text-center">
-<h2>Add A New Genre Please</h2>
+<h2>Add a New Genre Please</h2>
 
 <% if @genre.errors.any? %>
   <div id="error_explanation">
@@ -14,7 +14,7 @@
 
 <%= form_for @genre do |f| %>
     
-    Name of Genre: <%= f.text_field :name %><br><br>
+    <p><strong>Name of Genre:</strong> <%= f.text_field :name %><br><br>
     
     <%= f.submit %>
 <% end %>

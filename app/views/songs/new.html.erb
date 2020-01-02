@@ -1,5 +1,5 @@
 <div class="container text-center">
-<h2>Add A New Song</h2>
+<h2>New Song Yeah</h2>
 
 <% if @song.errors.any? %>
   <div id="error_explanation">
@@ -13,13 +13,9 @@
 <% end %>
 
 <%= form_for @song do |f| %>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %><br>
-   
-   <%=  f.label :artist %><br>
-    <%= f.text_field :artist %><br><br>
-
-    <%=  f.label :genre %><br>
+    <p><strong>Name:</strong> <%= f.text_field :name %><br>
+    <p><strong>Artist:</strong> <%= f.text_field :artist %><br>
+    <p><strong>Genre:</strong><br>
     <%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name) %><br><br>
    
     <%= f.submit %>

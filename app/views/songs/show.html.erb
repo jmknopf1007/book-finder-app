@@ -1,8 +1,14 @@
 <div class="container text-center">
 <h2>Song Show Page</h2> 
 
-<p><strong>Name</strong> : <%=@song.name%></p>
-<p><strong>Artist</strong> : <%=@song.artist%></p> 
+<p><strong>Name</strong>: <%=@song.name%></p>
+<p><strong>Artist</strong>: <%=@song.artist%></p> 
+
+<p><strong> Genre's</strong>: 
+    <% @genres.each do |genre| %>
+    |<%= genre.name %>|
+    <% end %>
+</p> 
 
 <%= link_to 'Edit Song', edit_song_path(@song.id) %> <br><br>
 <%= button_to 'Delete Song', song_path(@song), method: :delete %>
