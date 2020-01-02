@@ -1,0 +1,21 @@
+<div class="container text-center">
+<h2>Edit A Review Thank You</h2>
+
+<% if @review.errors.any? %>
+  <div id="error_explanation">
+    <h2>There were some errors:</h2>
+    <ul>
+      <% @review.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @review do |f| %>
+    
+    Song: <%= f.collection_select(:song_id, Song.all, :id, :name) %><br><br>
+    Review Text: <%= f.text_area :text %><br><br>
+    <%= f.submit %>
+<% end %>
+</div>

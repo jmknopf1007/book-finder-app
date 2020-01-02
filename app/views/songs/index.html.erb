@@ -1,0 +1,15 @@
+<div class="container text-center">
+<h2>All Songs</h2>
+
+<h3>Don't see a song you want to review?
+    <%= link_to "Add a new song!", new_song_path %> </h3>
+
+<ul>
+    <% @songs.each do |song| %>
+    <li>
+        <%= link_to song.name, song %> 
+    </li>
+    
+    <% end %>
+</ul>
+</div>

@@ -1,0 +1,10 @@
+<div class="container text-center">
+<h2>This Review</h2>
+
+<p><strong>Song Name</strong> : <%= @review.song.name %><br>
+<p><strong>By User</strong> : <%= @review.user.username %><br>
+<p><strong>Text</strong> : <%= @review.text %><br><br>
+
+<%= link_to 'Edit Review', edit_review_path(@review.id) %> <br>
+<%= button_to 'Delete Review', review_path(@review), method: :delete %>
+</div>

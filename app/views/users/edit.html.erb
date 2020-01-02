@@ -1,0 +1,22 @@
+<div class="container text-center">
+<h2>Edit Your Profile</h2>
+
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2>There were some errors:</h2>
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @user do |f| %>
+    Username: <%= f.text_field :username %><br><br>
+    Password: <%= f.password_field :password %><br><br>
+    <!--Confirm Password: <%= f.password_field :password_confirmation %><br><br>-->
+    
+    <%= f.submit %>
+<% end %>
+</div>

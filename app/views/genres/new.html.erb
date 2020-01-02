@@ -1,0 +1,21 @@
+<div class="container text-center">
+<h2>Add A New Genre Please</h2>
+
+<% if @genre.errors.any? %>
+  <div id="error_explanation">
+    <h2>There were some errors:</h2>
+    <ul>
+      <% @genre.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @genre do |f| %>
+    
+    Name of Genre: <%= f.text_field :name %><br><br>
+    
+    <%= f.submit %>
+<% end %>
+</div>
