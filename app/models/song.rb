@@ -8,4 +8,21 @@ class Song < ApplicationRecord
     validates :artist, presence: true
     validates :name, uniqueness: true
     validates :artist, uniqueness: true 
+
+
+    def self.search(search)
+        if search
+            song = Song.find_by(artist: search)
+            if song 
+                self.where(id: song.id) 
+            else
+                self.all
+            end
+        else
+            self.all 
+        end
+    end
+
+
+
 end
