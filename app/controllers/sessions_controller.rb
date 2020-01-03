@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
 
     def verify
         @user = User.find_by(username: params[:auth][:username]) 
-        if @user && @user.authenticate(params[:auth][:password])   
+        if @user && @user.authenticate(params[:auth][:password])     
             session[:user_id] = @user.id
             redirect_to '/songs' 
         else 
