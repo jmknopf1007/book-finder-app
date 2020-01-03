@@ -10,16 +10,25 @@ class Song < ApplicationRecord
     validates :artist, uniqueness: true 
 
 
+    # def self.search(search)
+    #     if search
+    #         #song = Song.where("artist like ?", "%#{search}%") 
+    #         song = Song.find_by(artist: search.titleize) 
+    #         if song 
+    #             self.where(id: song.id) 
+    #         else
+    #             self.all
+    #         end
+    #     else
+    #         self.all 
+    #     end
+    # end
+
     def self.search(search)
         if search
-            song = Song.find_by(artist: search.titleize) 
-            if song 
-                self.where(id: song.id) 
-            else
-                self.all
-            end
+            song = Song.where("artist like ?", "%#{search}%") 
         else
-            self.all 
+            Song.all  
         end
     end
 
