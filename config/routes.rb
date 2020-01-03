@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  #get 'welcome/index'
   resources :song_genres
   resources :reviews
   resources :genres

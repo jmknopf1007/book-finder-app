@@ -35,6 +35,7 @@ class UsersController < ApplicationController
 
     def destroy
         @user = User.find(params[:id])
+        Review.where(user_id: session[:user_id]).destroy_all
         @user.destroy
         session.clear
         redirect_to '/login' 
