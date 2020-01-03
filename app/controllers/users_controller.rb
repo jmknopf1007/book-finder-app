@@ -13,7 +13,8 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
 
         if @user.save
-            redirect_to user_path(@user) 
+            flash[:message] = "Account created, please log in."
+            redirect_to login_path  
         else
             render :new
         end
@@ -27,6 +28,7 @@ class UsersController < ApplicationController
         @user = User.find(params[:id])
         @user.update_attributes(user_params) 
         if @user.save
+            flash[:message] = "Account successfully updated."
             redirect_to user_path(@user)   
         else
             render :edit 
