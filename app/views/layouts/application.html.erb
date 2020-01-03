@@ -13,16 +13,27 @@
 
   <div class="navbar">
 
+  <% if logged_in? %>
+
   <form class="form-inline">
+  <a class="navbar-brand" href="/welcome/index"></a>
   <a class="nav-item" href="/songs">Song List</a>
   <a class="nav-item" href="/songs/new">Add a Song</a>
   <a class="nav-item" href="/reviews">Review List</a>
   <a class="nav-item" href="/reviews/new">Add a Review</a>
   <a class="nav-item" href="/genres/new">Add a Genre</a>
-  <a class="nav-item" href="/users/new">Create Account</a>
   </form>
 
-  </div>
+  <div class="topnav-nav d-flex flex-row">
+        <a class="nav-item" href="/users/<%= logged_in_user.id %>%"><%= logged_in_user.username %></a>
+        <a class="nav-item" href="/logout">Logout</a>
+        </div>
+      <% else %>
+
+      <a class="navbar-brand" href="/welcome/index"></a>
+        <% end %>
+
+    </div>
 
     <%= yield %>
   </body>

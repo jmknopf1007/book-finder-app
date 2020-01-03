@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    #skip_before_action :redirect_user, only: [:new, :create]
+    skip_before_action :redirect_user, only: [:new, :create]
     
     def show
         @user = User.find(params[:id])
@@ -42,7 +42,7 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:username, :password_digest) #:password_confirmation
+        params.require(:user).permit(:username, :password_digest, :password_confirmation)
     end
 
     # def find_user

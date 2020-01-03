@@ -1,0 +1,17 @@
+<div class="container text-center">
+<br><h2>Welcome to the Song Finder!</h2><br><br>
+<h3>Discover new songs and read reviews about them.</h3>
+</div>
+
+<div class="container text-center">
+    <%= flash[:message] %>
+    <%= form_for :auth do |f| %><br>
+
+    <p><strong>Username:</strong> <%= f.text_field :username %><br><br>
+    <p><strong>Password:</strong> <%= f.password_field :password %><br><br>
+
+    <%= f.submit "Login" %>
+    <% end %>
+    <br>
+    <%= button_to "Sign Up", signup_path%>
+</div>
