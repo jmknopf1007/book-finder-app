@@ -36,7 +36,8 @@ class UsersController < ApplicationController
     def destroy
         @user = User.find(params[:id])
         @user.destroy
-        redirect_to songs_path(@songs) 
+        session.clear
+        redirect_to '/login' 
     end
 
     private
