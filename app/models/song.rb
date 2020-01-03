@@ -12,7 +12,7 @@ class Song < ApplicationRecord
 
     def self.search(search)
         if search
-            song = Song.find_by(artist: search)
+            song = Song.find_by(artist: search.titleize) 
             if song 
                 self.where(id: song.id) 
             else

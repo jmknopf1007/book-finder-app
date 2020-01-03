@@ -3,8 +3,11 @@
 
 <p><strong>Song Name</strong>: <%= @review.song.name %><br>
 <p><strong>By User</strong>: <%= @review.user.username %><br>
-<p><strong>Text</strong>: <%= @review.text %><br><br>
 
-<%= link_to 'Edit Review', edit_review_path(@review.id) %> <br>
+<div class="rev"
+<p><strong>Text</strong>: <%= @review.text %><br><br>
+</div>
+
+<%= link_to 'Edit Review', edit_review_path(@review.id) %> <br><br>
 <%= button_to 'Delete Review', review_path(@review), method: :delete %>
 </div>

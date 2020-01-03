@@ -28,3 +28,11 @@
     padding-left:30px;
     padding-right:30px;
   }
+
+  .review {
+      max-width: 600px;
+  }
+
+  .rev {
+    max-width: 600px;
+}
