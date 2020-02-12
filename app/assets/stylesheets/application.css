@@ -21,18 +21,62 @@
   } 
 
   .navbar {
-    background-color: #ABCDEF;
+    /*background-color: turquoise;*/
+    background-color: black;
+    width: 100%;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
 }
-  
+
   .navbar a{
     padding-left:20px;
     padding-right:20px;
   }
 
   .review {
-      max-width: 600px;
+    max-width: 500px;
   }
 
   .rev {
-    max-width: 600px;
+    max-width: 500px;
 }
+
+.song_show {
+    max-width: 500px;
+} 
+
+body {
+  /*background-color: #ABCDEF;*/ 
+  border: 5px; 
+  /* padding-left: 5px;
+  padding-right: 5px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body, html {
+  height:100%; 
+}
+
+html {
+  background-color: #abcdef;
+  /* padding-left: 5px;
+  padding-right: 5px; */
+}
+
+/* .container text-center {
+  text-indent: 5px;
+} */
+
+/* p {
+ padding-left: 5px;
+  padding-right: 5px;
+} */
+
+/*.top {
+  background-color: turquoise;
+  position: relative;
+}*/

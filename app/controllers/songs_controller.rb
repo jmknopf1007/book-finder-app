@@ -6,7 +6,8 @@ class SongsController < ApplicationController
       end
     
       def show
-        @song = Song.find(params[:id]) 
+        @song = Song.find(params[:id])
+        @reviews = Review.where(song_id: @song.id)  
         @genres = @song.genres
       end
     
@@ -48,7 +49,7 @@ class SongsController < ApplicationController
       private 
     
       def song_params
-        params.require(:song).permit(:name, :artist, :search, {:genre_ids => []}) 
+        params.require(:song).permit(:name, :artist, :search, {:genre_ids => []})   
       end
     
 
