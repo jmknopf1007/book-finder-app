@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head id="top"> 
+  <head> 
     <title>SongFinderApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -18,16 +18,16 @@
     <% if logged_in? %>
   
     <form class="form-inline">
-    <a class="navbar-brand" href="/welcome/index"></a>
+    <a class="navbar-brand" href="/songs"></a>
     <a class="nav-item" href="/songs">Song List</a>
     <a class="nav-item" href="/songs/new">Add a Song</a>
     <a class="nav-item" href="/genres/new">Add a Genre</a>
     <a class="nav-item" href="/reviews">Review List</a>
     <a class="nav-item" href="/reviews/new">Add a Review</a>
-    <a class="nav-item" style="float:right" href="/logout">Logout</a>
-    <a class="nav-item" style="float:right" href="/users/<%= logged_in_user.id %>%"><%= logged_in_user.username %></a>
+    <a class="navbar-nav ml-auto" href="/users/<%= logged_in_user.id %>%"><%= logged_in_user.username %></a>
+    <a class="nav-item" href="/logout">Logout</a>
     </form>
-  
+
         <% else %>
   
         <a class="navbar-brand" href="/login"></a>

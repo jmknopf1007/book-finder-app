@@ -1,15 +1,15 @@
-<div class="container text-center">
-<h2>All the Reviews</h2>
+<div class="review-index">
+    <h2>All the Reviews</h2>
 
-<div class="review">
-<ul>
-<% @reviews.each do |review| %>
-    <li class="container text-center">
-        <%= review.song.name %> - Reviewed by <%= review.user.username %><br>
-        <%= link_to review.text, review %> 
-    </li>
-    <br>
-    <% end %>
-</ul>
-</div>
+        <ul>
+        <% @reviews.each do |review| %>
+            <li class="review-index">
+               <em><%= review.song.name %></em><br> reviewed by <u><%= review.user.username %></u>-
+               <%= link_to review.text, review %>
+               <p><strong>Review date:</strong> <%= review.created_at %></p>
+            </li>
+            <br>
+            <% end %>
+        </ul>
+
 </div>

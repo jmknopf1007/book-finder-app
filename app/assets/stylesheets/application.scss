@@ -1,0 +1,100 @@
+@import "bootstrap";
+
+ .field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: block;
+    list-style-type: none;
+    // text-align: center;
+  } 
+
+  .navbar {
+    background-color: black;
+    // background-color: coral;
+    /* width: 100%; */
+    display: block;
+    // border: none;
+    /* margin: 0 !important; */
+    /* margin-left: 0 !important;
+    margin-right: 0 !important; */
+}
+
+
+  .navbar a {
+    color: white;
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .navbar a:hover {
+    //background-color: #ddd;
+    background-color: rgb(105, 191, 218);
+    color: blue;
+  }
+
+  .navbar a:active {
+    background-color: green;
+    // background-color: rgb(105, 191, 218);
+  }
+
+  // .nav-item:hover {
+  //   background-color: red;
+  // }
+
+  // .nav-item:focus {
+  //   background-color: yellow;
+  // }
+
+  // .nav-item {
+  //   color:blue;
+  // }
+
+  .btn {
+    color: pink!important;
+  }
+
+  .review-index, .review-show {
+    text-align: left;
+    max-width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+.song-index, .song-show {
+  text-align: left;
+  max-width: 500px;
+  margin-left: 10px;
+  margin-right: 10px;
+} 
+
+body {
+  // background-image: linear-gradient(coral, blue)!important;
+  background-color: black;
+  background-image: url(/assets/purple-smoke.jpeg);
+  // background-repeat: no-repeat;
+  // margin-left: 10px;
+  // margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  // overflow-y: scroll;
+}
+
+.login-page {
+  text-align: center;
+}
+
+.new-song {
+  text-align: center;
+}
+
+a, p, h1, h2, h3, h4, ul, li {
+  // color: #f2f2f2;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+

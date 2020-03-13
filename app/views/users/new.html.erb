@@ -15,10 +15,12 @@
 <%= form_for @user do |f| %>
     <p><strong>Username:</strong> <%= f.text_field :username %><br><br>
     <p><strong>Password:</strong> <%= f.password_field :password %><br><br>
-    <p><strong>Confirm Password:</strong> <%= f.password_field :password_confirmation %><br><br>
+    <p><strong>Confirm Password:</strong> <%= f.password_field :password_confirmation %><br><br><br>
     
-    <%= f.submit %>
+    <%= f.submit %><br><br><br>
 
-    <!--<%= button_to "Back", songs_path%>-> 
+    <form>
+      <input type="button" value="Go back!" onclick="history.back()">
+    </form>
 <% end %>
 </div>

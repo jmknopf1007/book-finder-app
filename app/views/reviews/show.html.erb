@@ -1,12 +1,12 @@
-<div class="container text-center">
+<div class="review-show">
 <h2>This Review</h2>
 
-<p><strong>Song Name</strong>: <%= @review.song.name %><br>
-<p><strong>By User</strong>: <%= @review.user.username %><br>
+<p><strong>Song Name</strong>: <em><%= @review.song.name %></em><br>
+<p><strong>By</strong>: <u><%= @review.user.username %></u><br>
 
-<div class="rev"
-<p><strong>Text</strong>: <%= @review.text %><br>
-</div>
+
+<p><strong>Text</strong>: <%= @review.text %><br><br>
+
 
 <p><strong>Review date:</strong> <%= @review.created_at %>
 

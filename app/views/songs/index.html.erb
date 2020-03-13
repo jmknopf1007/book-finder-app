@@ -1,4 +1,4 @@
-<div class="container text-center">
+<div class="song-index">
 <h2>All the Songs</h2>
 
 <!--<h4>Don't see a song you want to review?
@@ -6,7 +6,7 @@
 
 
     <%= form_tag(songs_path, method: :get) do %>
-    <p><strong>Search by Artist</strong> <%= text_field_tag(:search, params[:search])%>
+    <p><strong>Search list by Artist Name</strong> <%= text_field_tag(:search, params[:search])%>
     <%= submit_tag ("Search")%>
     <% end %>
 
@@ -14,7 +14,7 @@
 <ul>
     <% @songs.each do |song| %>
     <li>
-        <%= link_to song.name, song %> 
+       <em><%= link_to song.name, song %></em> 
     </li><br>
     
     <% end %>

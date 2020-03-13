@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
     skip_before_action :redirect_user
+    # skip_before_action :verify_authenticity_token, only: [:new, :create]
 
     def login
     end
