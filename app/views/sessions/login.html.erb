@@ -1,9 +1,11 @@
 <div class="login-page">
-<br><h2>Welcome to the Song Finder!</h2><br>
-<h3><em>Discover new songs and read reviews about them.</em></h3>
-</div>
+<br><h2>Welcome to My Beatz!</h2><br>
+<%= image_tag("guitar-logo.jpeg", width: '200vw', class: "logo-style") %><br>
+<br><h4><em>Discover new songs and read reviews about them.</em></h4>
 
-<div class="login-page">
+
+
+
     <%= flash[:message] %>
     <%= form_for :auth do |f| %><br>
 
@@ -15,7 +17,7 @@
     <% end %>
   
     <br>
-    <a class"btn-primary">
-    <%= button_to "Sign Up", signup_path%>
-    </a
+   
+    <%= button_to "Sign Up", signup_path %>
+    
 </div>

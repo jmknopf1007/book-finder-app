@@ -11,14 +11,15 @@
     </head>
     
     <body>
-    <div class="border">
     
+     
     <div class="navbar">
   
     <% if logged_in? %>
   
     <form class="form-inline">
-    <a class="navbar-brand" href="/songs"></a>
+    <%= image_tag("guitar-logo.jpeg", width: '35vw', class: "logo-style") %><br>
+   
     <a class="nav-item" href="/songs">Song List</a>
     <a class="nav-item" href="/songs/new">Add a Song</a>
     <a class="nav-item" href="/genres/new">Add a Genre</a>
@@ -37,9 +38,24 @@
   
   
         </div>
-      </div>
+       
+     
 
 
     <%= yield %>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="page-footer font-small">
+
+      
+        <div class="footer-copyright text-center py-3">~ 2019 Copyright: Jacob Knopf</div>
+      
+      
+    </footer>
+
+
   </body>
 </html>

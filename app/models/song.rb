@@ -26,7 +26,7 @@ class Song < ApplicationRecord
 
     def self.search(search)
         if search
-            song = Song.where("artist like ?", "%#{search}%") 
+            song = Song.where("artist like ?", "%#{search}%".titleize) 
         else
             Song.all  
         end

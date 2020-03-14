@@ -6,12 +6,12 @@
 
 
     <%= form_tag(songs_path, method: :get) do %>
-    <p><strong>Search list by Artist Name</strong> <%= text_field_tag(:search, params[:search])%>
+    <%= text_field_tag(:search, params[:search])%>
     <%= submit_tag ("Search")%>
     <% end %>
 
 
-<ul>
+<br><ul>
     <% @songs.each do |song| %>
     <li>
        <em><%= link_to song.name, song %></em> 

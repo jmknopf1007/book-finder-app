@@ -1,7 +1,7 @@
 <div class="container text-center">
 <h2>Your Profile</h2>
 
-<p><strong>User</strong> : <%= @user.username %><br><br>
+<p><strong>Username:</strong> <u><%= @user.username %></u><br><br>
 
 <%= link_to 'Edit Profile', edit_user_path(@user.id) %> <br>
 <%= button_to 'Delete Profile', user_path(@user), method: :delete %>

@@ -10,7 +10,8 @@
 
   .navbar {
     background-color: black;
-    // background-color: coral;
+    // background-color: #90EE90;
+    // background-color: #b19cd9;
     /* width: 100%; */
     display: block;
     // border: none;
@@ -19,6 +20,14 @@
     margin-right: 0 !important; */
 }
 
+label {
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.logo-style {
+  border-radius: .5em;
+}
 
   .navbar a {
     color: white;
@@ -35,22 +44,6 @@
   .navbar a:active {
     background-color: green;
     // background-color: rgb(105, 191, 218);
-  }
-
-  // .nav-item:hover {
-  //   background-color: red;
-  // }
-
-  // .nav-item:focus {
-  //   background-color: yellow;
-  // }
-
-  // .nav-item {
-  //   color:blue;
-  // }
-
-  .btn {
-    color: pink!important;
   }
 
   .review-index, .review-show {
@@ -70,16 +63,17 @@
 body {
   // background-image: linear-gradient(coral, blue)!important;
   background-color: black;
-  background-image: url(/assets/purple-smoke.jpeg);
-  // background-repeat: no-repeat;
-  // margin-left: 10px;
-  // margin-right: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  background-image: url(/assets/pink-background.jpeg);
+  background-size: cover;
+
   background-attachment: fixed;
   background-repeat: no-repeat;
-  // overflow-y: scroll;
+
+  min-height: 100%;
+  min-height: 100vh;
+  position: relative;
 }
+
 
 .login-page {
   text-align: center;
@@ -87,14 +81,31 @@ body {
 
 .new-song {
   text-align: center;
+  // margin-left: 10px;
+  // margin-right: 10px;
 }
 
 a, p, h1, h2, h3, h4, ul, li {
   // color: #f2f2f2;
-  color: white;
+  color: black;
 }
 
 ul {
   list-style-type: none;
+}
+
+// .btn {
+  // background-color: blue;
+// }
+
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-copyright {
+  color: white;
 }
 

@@ -16,9 +16,11 @@
     <p><strong>Name:</strong> <%= f.text_field :name %><br>
     <p><strong>Artist:</strong> <%= f.text_field :artist %><br>
     <p><strong>Genre:</strong><br>
-    <%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name) %><br><br>
    
+    <%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name, :item_wrapper_class => 'checkbox_container') %><br><br>
+ 
     <%= f.submit %>
    
    <% end %>
    </div>
+   
