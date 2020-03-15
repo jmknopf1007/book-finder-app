@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+@import url("https://fonts.googleapis.com/css?family=Baloo+2&display=swap");
+
  .field_with_errors {
     padding: 2px;
     background-color: red;
@@ -9,7 +11,9 @@
   } 
 
   .navbar {
-    background-color: black;
+    // background-color: black;
+    // background-color: #292b2c;
+    background-color: #343a40;
     // background-color: #90EE90;
     // background-color: #b19cd9;
     /* width: 100%; */
@@ -40,11 +44,20 @@ label {
     background-color: rgb(105, 191, 218);
     color: blue;
   }
-
+  
   .navbar a:active {
-    background-color: green;
+    background-color: blue;
     // background-color: rgb(105, 191, 218);
   }
+
+  a:hover {
+    // background-color: rgb(105, 191, 218);
+    color: blue;
+  }
+
+  // a:active {
+  //   background-color: green;
+  // }
 
   .review-index, .review-show {
     text-align: left;
@@ -60,9 +73,16 @@ label {
   margin-right: 10px;
 } 
 
+.input-field {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  // box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
 body {
   // background-image: linear-gradient(coral, blue)!important;
-  background-color: black;
+  // background-color: black;
+  // background-color: #292b2c;
+  background-color: #343a40;
   background-image: url(/assets/pink-background.jpeg);
   background-size: cover;
 
@@ -88,18 +108,28 @@ body {
 a, p, h1, h2, h3, h4, ul, li {
   // color: #f2f2f2;
   color: black;
+  font-family: 'Baloo 2';
 }
+
+// p {
+//   font-weight: bold!important;
+// }
 
 ul {
   list-style-type: none;
 }
 
-// .btn {
-  // background-color: blue;
-// }
+.btn {
+  // background-color: #FFFFFF;
+  // border-radius: .5em;
+  // border-color: #292b2c;
+  // border-color: #343a40;
+  border-width: 2px;
+}
 
 footer {
-  background-color: black;
+  // background-color: black;
+  background-color: #343a40;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -108,4 +138,3 @@ footer {
 .footer-copyright {
   color: white;
 }
-

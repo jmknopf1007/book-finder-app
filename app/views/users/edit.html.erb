@@ -1,4 +1,4 @@
-<div class="container text-center">
+<div class="container text-center"><br>
 <h2>Edit Your Profile</h2>
 
 <% if @user.errors.any? %>
@@ -13,14 +13,14 @@
 <% end %>
 
 <%= form_for @user do |f| %>
-    <p><strong>Username:</strong> <%= f.text_field :username %><br><br>
-    <p><strong>Password:</strong> <%= f.password_field :password %><br><br>
-    <p><strong>Confirm Password:</strong> <%= f.password_field :password_confirmation %><br><br>
+    <p>Username: <%= f.text_field :username, class: "input-field" %><br><br>
+    <p>Password: <%= f.password_field :password, class: "input-field" %><br><br>
+    <p>Confirm Password: <%= f.password_field :password_confirmation, class: "input-field" %><br><br><br>
     
-    <%= f.submit %>
+    <%= f.submit "Update User", class: "btn btn-outline-dark" %><br><br><br>
 
     <form>
-      <input type="button" value="Go back!" onclick="history.back()">
+      <input type="button" class="btn btn-outline-dark" value="Go Back!" onclick="history.back()">
     </form>
 <% end %>
 </div>

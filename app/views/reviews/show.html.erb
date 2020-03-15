@@ -1,15 +1,15 @@
-<div class="review-show">
+<div class="review-show"><br>
 <h2>This Review</h2>
 
-<p><strong>Song Name:</strong> <em><%= @review.song.name %></em><br>
-<p><strong>By:</strong> <u><%= @review.user.username %></u><br>
+<p>Song Name: <em><%= @review.song.name %></em><br>
+<p>By: <u><%= @review.user.username %></u><br>
 
 
-<p><strong>Text:</strong> <%= @review.text %><br>
+<p>Text: <%= @review.text %><br>
 
 
-<p><strong>Review date:</strong> <%= @review.created_at %>
+<p>Review date: <%= @review.created_at %>
 
 <!--<%= link_to 'Edit Review', edit_review_path(@review.id) %> <br><br>
-<%= button_to 'Delete Review', review_path(@review), method: :delete %>-->
+<%= button_to "Delete Review", review_path(@review), method: :delete %>-->
 </div>

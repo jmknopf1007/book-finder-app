@@ -1,4 +1,4 @@
-<div class="new-song">
+<div class="new-song"><br>
 <h2>New Song Yeah</h2>
 
 <% if @song.errors.any? %>
@@ -13,13 +13,13 @@
 <% end %>
 
 <%= form_for @song do |f| %>
-    <p><strong>Name:</strong> <%= f.text_field :name %><br>
-    <p><strong>Artist:</strong> <%= f.text_field :artist %><br>
-    <p><strong>Genre:</strong><br>
+    <p>Name: <%= f.text_field :name, class: "input-field" %><br>
+    <p>Artist: <%= f.text_field :artist, class: "input-field" %><br>
+    <p>Genre:<br>
    
     <%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name, :item_wrapper_class => 'checkbox_container') %><br><br>
  
-    <%= f.submit %>
+    <%= f.submit "Create Song", class: "btn btn-outline-dark" %>
    
    <% end %>
    </div>

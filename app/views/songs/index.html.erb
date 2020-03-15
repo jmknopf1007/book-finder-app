@@ -1,4 +1,4 @@
-<div class="song-index">
+<div class="song-index"><br>
 <h2>All the Songs</h2>
 
 <!--<h4>Don't see a song you want to review?
@@ -6,8 +6,8 @@
 
 
     <%= form_tag(songs_path, method: :get) do %>
-    <%= text_field_tag(:search, params[:search])%>
-    <%= submit_tag ("Search")%>
+    <%= text_field_tag :search, params[:search], class: "input-field", placeholder: "search by artist" %>
+    <%= submit_tag ("Search"), class: "btn btn-outline-dark" %>
     <% end %>
 
 
