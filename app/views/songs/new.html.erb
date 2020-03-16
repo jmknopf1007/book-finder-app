@@ -13,8 +13,8 @@
 <% end %>
 
 <%= form_for @song do |f| %>
-    <p><strong>Name:</strong> <%= f.text_field :name, class: "input-field" %><br>
-    <p><strong>Artist:</strong> <%= f.text_field :artist, class: "input-field" %><br>
+    <p><strong>Name:</strong> <%= f.text_field :name, class: "input-field", placeholder: "type song here" %><br>
+    <p><strong>Artist:</strong> <%= f.text_field :artist, class: "input-field", placeholder: "type artist here" %><br>
     <p><strong>Genre:</strong><br>
    
     <%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name, :item_wrapper_class => 'checkbox_container') %><br><br>

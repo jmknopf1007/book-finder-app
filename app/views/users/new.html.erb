@@ -13,9 +13,9 @@
 <% end %>
 
 <%= form_for @user do |f| %>
-    <p><strong>Username:</strong> <%= f.text_field :username, class: "input-field" %><br><br>
-    <p><strong>Password:</strong> <%= f.password_field :password, class: "input-field" %><br><br>
-    <p><strong>Confirm Password:</strong> <%= f.password_field :password_confirmation, class: "input-field" %><br><br><br>
+    <p><strong>Username:</strong> <%= f.text_field :username, class: "input-field", placeholder: "type name here" %><br><br>
+    <p><strong>Password:</strong> <%= f.password_field :password, class: "input-field", placeholder: "type password here" %><br><br>
+    <p><strong>Confirm Password:</strong> <%= f.password_field :password_confirmation, class: "input-field", placeholder: "confirm password" %><br><br><br>
     
     <%= f.submit "Create User", class: "btn btn-outline-dark" %><br><br><br>
 
