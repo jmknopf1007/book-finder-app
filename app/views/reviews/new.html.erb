@@ -14,8 +14,8 @@
 
 <%= form_for @review do |f| %>
     
-    <p>Song: <%= f.collection_select(:song_id, Song.all, :id, :name) %><br><br>
-    <p>Review Text:<br> <%= f.text_area :text, cols: "50", rows: "4", class: "input-field" %><br><br>
+    <p><strong>Song:</strong> <%= f.collection_select(:song_id, Song.all, :id, :name) %><br><br>
+    <p><strong>Review Text:</strong><br> <%= f.text_area :text, cols: "50", rows: "4", class: "input-field" %><br><br>
     <%= f.submit "Create Review", class: "btn btn-outline-dark" %>
 <% end %>
 </div>

@@ -1,10 +1,10 @@
 <div class="song-show"><br>
 <h2>About this Song</h2> 
 
-<p>Name: <em><%=@song.name%></em></p>
-<p>Artist: <%=@song.artist%></p> 
+<p><strong>Name:</strong> <em><%=@song.name%></em></p>
+<p><strong>Artist:</strong> <%=@song.artist%></p> 
 
-<p> Genre's: 
+<p><strong>Genre's:</strong> 
     <% @genres.each do |genre| %>
     |<%= genre.name %>|
     <% end %>
@@ -21,9 +21,9 @@
 <% else %>
 <% @reviews.each do |review| %>
 
-    <p>User: <u><%= review.user.username %></u><br><br>
+    <p><strong>User:</strong> <u><%= review.user.username %></u><br><br>
       <%= link_to review.text, review %><br>
-       <p>Review date: <%= review.created_at %>
+       <p><strong>Review date:</strong> <%= review.created_at %>
         <% end %>
     <% end %>
 
