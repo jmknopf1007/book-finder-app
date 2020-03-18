@@ -1,0 +1,26 @@
+<div class="new-song"><br>
+<h2>New Book Yeah</h2>
+
+<% if @book.errors.any? %>
+  <div id="error_explanation">
+    <h2>There were some errors:</h2>
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @book do |f| %>
+    <p><strong>Name:</strong> <%= f.text_field :name, class: "input-field", placeholder: "type book here" %><br>
+    <p><strong>Artist:</strong> <%= f.text_field :author, class: "input-field", placeholder: "type author here" %><br>
+    <p><strong>Genre:</strong><br>
+   
+    <%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name, :item_wrapper_class => 'checkbox_container') %><br><br>
+ 
+    <%= f.submit "Create Book", class: "btn btn-outline-dark" %>
+   
+   <% end %>
+   </div>
+   

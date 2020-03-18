@@ -1,28 +1,28 @@
 <div class="container text-center"><br>
-<h2>Edit a Song</h2>
+<h2>Edit a Book</h2>
 
-<% if @song.errors.any? %>
+<% if @book.errors.any? %>
   <div id="error_explanation">
     <h2>There were some errors:</h2>
     <ul>
-      <% @song.errors.full_messages.each do |message| %>
+      <% @book.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
     </ul>
   </div>
 <% end %>
 
-<%= form_for @song do |f| %>
+<%= form_for @book do |f| %>
     <p><strong>Name:</strong>
     <%= f.text_field :name, class: "input-field" %><br>
    
     <p><strong>Artist:</strong>
-    <%= f.text_field :artist, class: "input-field" %><br>
+    <%= f.text_field :author, class: "input-field" %><br>
 
     <p><strong>Genre:</strong><br>
     <%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name) %><br><br>
    
-    <%= f.submit "Update Song", class: "btn btn-outline-dark" %>
+    <%= f.submit "Update Book", class: "btn btn-outline-dark" %>
    
    <% end %>
    </div>

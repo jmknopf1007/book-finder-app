@@ -13,7 +13,7 @@ class GenresController < ApplicationController
         @genre = Genre.new(genre_params)
       
           if @genre.save
-            redirect_to new_song_path
+            redirect_to new_book_path
           else
             render :new
           end

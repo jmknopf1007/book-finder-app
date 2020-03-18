@@ -1,8 +1,8 @@
 <div class="song-show"><br>
-<h2>About this Song</h2> 
+<h2>About this Book</h2> 
 
-<p><strong>Name:</strong> <em><%=@song.name%></em></p>
-<p><strong>Artist:</strong> <%=@song.artist%></p> 
+<p><strong>Name:</strong> <em><%=@book.name%></em></p>
+<p><strong>Author:</strong> <%=@book.author%></p> 
 
 <p><strong>Genre's:</strong> 
     <% @genres.each do |genre| %>
@@ -10,8 +10,8 @@
     <% end %>
 </p> 
 
-<%= link_to 'Edit Song', edit_song_path(@song.id) %> <br><br>
-<!--<%= button_to 'Delete Song', song_path(@song), method: :delete %>-->
+<%= link_to 'Edit Book', edit_book_path(@book.id) %> <br><br>
+<!--<%= button_to 'Delete Book', book_path(@book), method: :delete %>-->
 
 
 

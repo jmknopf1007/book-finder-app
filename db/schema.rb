@@ -15,6 +15,20 @@ ActiveRecord::Schema.define(version: 2019_12_31_171519) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "book_genres", force: :cascade do |t|
+    t.integer "book_id"
+    t.integer "genre_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "books", force: :cascade do |t|
+    t.string "name"
+    t.string "author"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "genres", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -22,23 +36,9 @@ ActiveRecord::Schema.define(version: 2019_12_31_171519) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer "song_id"
+    t.integer "book_id"
     t.integer "user_id"
     t.string "text"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "song_genres", force: :cascade do |t|
-    t.integer "song_id"
-    t.integer "genre_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "songs", force: :cascade do |t|
-    t.string "name"
-    t.string "artist"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
