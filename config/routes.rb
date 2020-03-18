@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   
-  resources :song_genres
+  resources :book_genres
   resources :reviews
   resources :genres
   resources :users, only: [:show, :new, :create, :edit, :update, :destroy]
-  resources :songs
+  resources :books
 
   post '/signup', to: "users#new", as: 'signup'
   get '/signup', to: "users#new"

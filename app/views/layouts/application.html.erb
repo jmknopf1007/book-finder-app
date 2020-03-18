@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head> 
-    <title>SongFinderApp</title>
+    <title>BookFinderApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -18,10 +18,10 @@
     <% if logged_in? %>
   
     <form class="form-inline">
-    <%= image_tag("guitar-logo.jpeg", width: '35vw', class: "logo-style") %><br>
+    <%= image_tag("my-bookz.jpeg", width: '35vw', class: "logo-style") %><br>
    
-    <a class="nav-item" href="/songs">Song List</a>
-    <a class="nav-item" href="/songs/new">Add a Song</a>
+    <a class="nav-item" href="/books">Book List</a>
+    <a class="nav-item" href="/books/new">Add a Book</a>
     <a class="nav-item" href="/genres/new">Add a Genre</a>
     <a class="nav-item" href="/reviews">Review List</a>
     <a class="nav-item" href="/reviews/new">Add a Review</a>
