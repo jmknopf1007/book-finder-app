@@ -12,8 +12,8 @@ BookGenre.delete_all
 BookGenre.reset_pk_sequence 
 
 
-10.times do |i|
-    Book.create(name: Faker::Book.unique.title, author: Faker::Book.unique.author) 
+20.times do |i|
+    Book.create(title: Faker::Book.unique.title, author: Faker::Book.unique.author) 
 end 
 
 puts "bookseedingsuccess" 
@@ -36,13 +36,13 @@ end
 
 puts "genreseedingsuccess" 
 
-10.times do |i|
+15.times do |i|
     Review.create(user_id: User.all.sample.id, book_id: Book.all.sample.id, text: Faker::TvShows::BojackHorseman.unique.quote) 
 end
 
 puts "reviewseedingsuccess" 
 
-10.times do |i|
+20.times do |i|
     BookGenre.create(book_id: Book.all.sample.id, genre_id: Genre.all.sample.id)  
 end
 

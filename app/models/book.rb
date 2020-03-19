@@ -4,18 +4,18 @@ class Book < ApplicationRecord
     has_many :book_genres
     has_many :genres, through: :book_genres
 
-    validates :name, presence: true
+    validates :title, presence: true
     validates :author, presence: true
-    validates :name, uniqueness: true
+    validates :title, uniqueness: true
     validates :author, uniqueness: true 
 
 
     # def self.search(search)
     #     if search
-    #         #song = Song.where("artist like ?", "%#{search}%") 
-    #         song = Song.find_by(artist: search.titleize) 
-    #         if song 
-    #             self.where(id: song.id) 
+    #         #book = Book.where("author like ?", "%#{search}%") 
+    #         book = Book.find_by(author: search.titleize) 
+    #         if book 
+    #             self.where(id: book.id) 
     #         else
     #             self.all
     #         end
@@ -26,7 +26,7 @@ class Book < ApplicationRecord
 
     def self.search(search)
         if search
-            book = Book.where("artist like ?", "%#{search}%".titleize) 
+            book = Book.where("author like ?", "%#{search}%".titleize) 
         else
             Book.all  
         end

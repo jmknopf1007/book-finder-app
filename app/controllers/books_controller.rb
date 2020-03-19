@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
 
     def index
-        #@songs = Song.all
+        #@books = Book.all
         @books = Book.search(params[:search]) 
       end
     
@@ -49,7 +49,7 @@ class BooksController < ApplicationController
       private 
     
       def book_params
-        params.require(:book).permit(:name, :author, :search, {:genre_ids => []})   
+        params.require(:book).permit(:title, :author, :search, {:genre_ids => []})   
       end
     
 
