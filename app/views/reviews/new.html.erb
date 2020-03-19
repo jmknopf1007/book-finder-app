@@ -14,7 +14,7 @@
 
 <%= form_for @review do |f| %>
     
-    <p><strong>Book:</strong> <%= f.collection_select(:book_id, Book.all, :id, :name) %><br><br>
+    <p><strong>Book Title:</strong> <%= f.collection_select(:book_id, Book.all, :id, :title) %><br><br>
     <p><strong>Review Text:</strong><br> <%= f.text_area :text, cols: "50", rows: "4", class: "input-field", placeholder: "type review text here....." %><br><br>
     <%= f.submit "Create Review", class: "btn btn-outline-dark" %>
 <% end %>

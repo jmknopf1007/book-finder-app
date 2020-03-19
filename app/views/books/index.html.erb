@@ -1,4 +1,4 @@
-<div class="song-index"><br>
+<div class="book-index"><br>
 <h2>All the Books</h2>
 
 
@@ -11,7 +11,7 @@
 <br><ul>
     <% @books.each do |book| %>
     <li>
-       <em><%= link_to book.name, book %></em> 
+       <em><%= link_to book.title, book %></em> 
     </li><br>
     
     <% end %>

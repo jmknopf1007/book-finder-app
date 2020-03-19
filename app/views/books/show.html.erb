@@ -1,7 +1,7 @@
-<div class="song-show"><br>
+<div class="book-show"><br>
 <h2>About this Book</h2> 
 
-<p><strong>Name:</strong> <em><%=@book.name%></em></p>
+<p><strong>Title:</strong> <em><%=@book.title%></em></p>
 <p><strong>Author:</strong> <%=@book.author%></p> 
 
 <p><strong>Genre's:</strong> 
@@ -21,8 +21,8 @@
 <% else %>
 <% @reviews.each do |review| %>
 
-    <p><strong>User:</strong> <u><%= review.user.username %></u><br><br>
-      <%= link_to review.text, review %><br>
+    <p><strong>User:</strong> <u><%= review.user.username %></u><br>
+    <p><strong>Text:</strong> <%= link_to review.text, review %><br>
        <p><strong>Review date:</strong> <%= review.created_at %>
         <% end %>
     <% end %>
