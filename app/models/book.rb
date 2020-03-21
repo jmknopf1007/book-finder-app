@@ -6,8 +6,8 @@ class Book < ApplicationRecord
 
     validates :title, presence: true
     validates :author, presence: true
-    validates :title, uniqueness: true
-    validates :author, uniqueness: true 
+    # validates :title, uniqueness: true
+    # validates :author, uniqueness: true 
 
 
     # def self.search(search)
