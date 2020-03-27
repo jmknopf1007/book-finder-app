@@ -32,6 +32,7 @@ The program is built to guide you through:<br>
 - you can view all the books in the database<br>
 - you can add a new book<br>
 - you can edit an existing book<br>
+- you can search for books by author name<br>
 - you can add a new genre<br>
 - you can add a new review for a book<br>
 - you can view all the reviews in the database<br>
