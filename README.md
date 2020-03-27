@@ -27,7 +27,8 @@ The program is built to guide you through:<br>
 - it will handle all user inputs<br>
 - let you know if something was not valid<br>
 - you can create a new user account<br>
-- you can edit user information<br>
+- you can edit/update account information<br>
+- you can delete your account<br>
 - you can view all the books in the database<br>
 - you can add a new book<br>
 - you can edit an existing book<br>
