@@ -25,6 +25,7 @@ activerecord-reset-pk-sequence<br>
 
 The program is built to guide you through:<br>
 - it will handle all user inputs<br>
+- let you know if something was not valid<br>
 - you can create a new user account<br>
 - you can edit user information<br>
 - you can view all the books in the database<br>
