@@ -20,7 +20,7 @@ bcrypt ~> 3.1.7<br>
 bootstrap ~> 4.4.1<br>
 bootstrap_form ~> 4.0<br>
 activerecord-reset-pk-sequence<br>
-pictures from pexels.com<br>
+pictures from https://www.pexels.com<br>
 
 ## How to navigate this program
 
