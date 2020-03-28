@@ -16,8 +16,8 @@ https://my-book-finder-app.herokuapp.com
 ruby ~> 2.6.1<br>
 rails ~> 6.0.2<br>
 pg ~> 12.0<br>
-bcrypt ~> 3.1.7<br>
 faker ~> 2.11.0<br>
+bcrypt ~> 3.1.7<br>
 bootstrap ~> 4.4.1<br>
 bootstrap_form ~> 4.0<br>
 activerecord-reset-pk-sequence<br>
