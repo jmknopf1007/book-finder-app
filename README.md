@@ -4,9 +4,9 @@ My Bookz is an online platform to discover new books, and leave reviews for them
 too. The idea for this app was to create a digital database where users can edit<br> 
 exisiting book information and update the database with books of their choice. 
 
-App Link: https://my-book-finder-app.herokuapp.com
+**App Link:** https://my-book-finder-app.herokuapp.com
 
-Full Walkthrough: https://www.youtube.com/watch?v=Qv-qHV2pL8Y&feature=youtu.be
+**Full Walkthrough:** https://www.youtube.com/watch?v=Qv-qHV2pL8Y&feature=youtu.be
 
 ## Demo
 
