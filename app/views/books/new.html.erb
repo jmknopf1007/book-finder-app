@@ -17,7 +17,7 @@
     <p><strong>Author:</strong> <%= f.text_field :author, class: "input-field", placeholder: "type author here" %><br>
     <p><strong>Genre:</strong><br>
    
-    <%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name, :item_wrapper_class => 'checkbox_container') %><br><br>
+    <%= f.collection_check_boxes(:genre_ids, Genre.all, :id, :name, item_wrapper_class: "checkbox_container") %><br><br>
  
     <%= f.submit "Create Book", class: "btn btn-outline-dark" %>
    
