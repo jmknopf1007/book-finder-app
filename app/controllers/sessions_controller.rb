@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
             session[:user_id] = @user.id
             redirect_to books_path 
         else 
-            flash[:message] = "User not found, please try again."
+            flash[:message] = "User not found, please try again!" 
             render :login
         end
     end
