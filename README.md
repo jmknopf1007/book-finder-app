@@ -10,7 +10,7 @@ exisiting book information and update the website with books of their choice.
 
 ## Demo
 
-![](BookFinderApp.gif)
+![](MyBookzApp.gif) 
 
 
 ## Built With 
