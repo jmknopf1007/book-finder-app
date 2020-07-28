@@ -3,7 +3,7 @@
 
         <ul>
         <% @reviews.each do |review| %>
-            <li class="review-index">
+            <li>
                <em><%= review.book.title %></em><br> 
                reviewed by <u><%= review.user.username %></u>--
                <%= link_to review.text, review %>
