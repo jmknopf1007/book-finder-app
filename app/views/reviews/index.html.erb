@@ -1,14 +1,14 @@
 <div class="review-index"><br>
-    <h2>All the Reviews</h2>
+<h2>All the Reviews</h2>
 
-        <ul>
-        <% @reviews.each do |review| %>
-            <li>
-               <em><%= review.book.title %></em><br> 
-               reviewed by <u><%= review.user.username %></u>--
-               <%= link_to review.text, review %>
-               <p>Review Date: <%= review.created_at %></p>
-            </li><br>
-            <% end %>
-        </ul>
+    <ul>
+    <% @reviews.each do |review| %>
+        <li>
+            <em><%= review.book.title %></em><br> 
+            reviewed by <u><%= review.user.username %></u>--
+            <%= link_to review.text, review %>
+            <p>Review Date: <%= review.created_at %></p>
+        </li><br>
+        <% end %>
+    </ul>
 </div>
