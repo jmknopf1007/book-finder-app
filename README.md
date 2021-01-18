@@ -45,4 +45,4 @@ The program is built to guide you through:<br>
 
 Currently there is no way to comment on a review. In the next version of<br>
 the app I would like to implement that new functionality, as well as potentially<br> 
-adding links to buy each book in the database from a separate third party website.  
+adding links to buy each book in the database from a separate third-party website.  
