@@ -6,7 +6,7 @@ exisiting book information and update the website with books of their choice.
 
 **App Link:** https://my-book-finder-app.herokuapp.com
 
-**Full Walk-through:** https://www.youtube.com/watch?v=lA-YF1HDAEU&t=2s
+**Full Walk-Through:** https://www.youtube.com/watch?v=lA-YF1HDAEU&t=2s
 
 ## Demo
 
